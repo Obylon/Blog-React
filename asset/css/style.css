@@ -1,6 +1,6 @@
 /*code css page index*/
 .corps {
-    background-image: url(/asset/img/etoile.png);
+    background-image: url(../img/etoile.png);
     background-size: cover; 
     background-repeat: no-repeat; 
     min-height: 100vh; 
