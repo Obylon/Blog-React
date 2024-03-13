@@ -9,9 +9,9 @@ const interactive = () => {
 
   return (
     <div>
-      <h2>Compteur de clics</h2>
-      <p>Nombre de clics : {count}</p>
-      <button onClick={handleClick}>Cliquez ici</button>
+      <h2>Click counter</h2>
+      <p>Number of clicks : {count}</p>
+      <button onClick={handleClick}>Click here</button>
     </div>
   );
 };
