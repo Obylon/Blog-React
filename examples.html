@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/nav.css">
+    <title>Examples</title>
+</head>
+<body class="corps">
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="examples.html" class="nav-link">Examples</a>
+                <a href="issues.html" class="nav-link">Commun issues</a>
+                <a href="tips.html" class="nav-link">Tips & Tricks</a>
+                <a href="conclusion.html" class="nav-link">Conclusion</a>
+                <div class="burger-menu">
+                    <div class="burger-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <img src="asset/img/ex.png" alt="logo" class="logo">
+    </div>
+    <div class="texte">
+        <div>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur autem nihil distinctio expedita alias aut similique. Maxime, eius dicta esse numquam, officiis harum quos voluptatem repellat nobis, in ipsa. Illo.lor
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et nobis vel temporibus suscipit ipsum, beatae eaque atque, nulla possimus ratione deleniti. Sit numquam, totam molestiae libero id amet praesentium!Loreml Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, et itaque quas incidunt sed distinctio fugiat repellendus ducimus. Ad nulla animi iure magni voluptates alias laboriosam obcaecati quod hic sunt.
+            Itaque delectus distinctio harum quas tenetur asperiores ea iure minima odit. Maxime nemo dolorum ipsa harum in amet dolores assumenda. Quia fuga facilis ad totam officia! Eius temporibus fugiat dolor.
+            Magnam, magni ullam. Minima amet excepturi beatae quos autem officia illum commodi eum quo doloribus fuga culpa corporis, nostrum rerum modi maxime possimus obcaecati magni aut sed molestiae, quae voluptate.
+            Nesciunt eum exercitationem accusamus quaerat dicta cum, voluptatem amet, sunt voluptate possimus iure libero unde enim officia tempora dolorem assumenda maxime? Qui atque eligendi repellat aspernatur! Dolorum quaerat sunt laudantium?
+            Enim laboriosam cupiditate, saepe molestiae suscipit voluptas. Asperiores et doloribus modi consequatur ab, praesentium dicta eaque provident similique velit unde laboriosam aliquam officiis in iste rem qui distinctio dolores odio.
+            Facilis, modi quisquam numquam tempore repellat eveniet neque consectetur similique necessitatibus vero perferendis doloribus consequatur ipsa quis illum corporis perspiciatis recusandae! Sint explicabo facilis iusto, amet ab non impedit quasi!
+            </p>
+        </div>
+    </div>
+    <div class="oh">
+        <div> <img src="asset/img/code.png" alt="" class="ok"></div>
+        <img src="asset/img/fleche.png" alt="" class="bg">
+        <div id="root"></div>
+    </div>
+    
+    <script src="asset/js/script.js"></script>
+    <script type="module" src="asset/js/interactive.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script>
+        const { useState } = React;
+
+        const interactive = () => {
+            const [count, setCount] = useState(0);
+            const handleClick = () => {
+                setCount(count + 1);
+            };
+
+            return (
+                React.createElement('div', null,
+                    React.createElement('h2', null, 'Compteur de clics'),
+                    React.createElement('p', null, `Nombre de clics : ${count}`),
+                    React.createElement('button', { onClick: handleClick }, 'Cliquez ici')
+                )
+            );
+        };
+
+        ReactDOM.render(React.createElement(interactive), document.getElementById('root'));
+    </script>
+</body>
+</html>

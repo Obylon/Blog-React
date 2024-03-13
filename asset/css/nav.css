@@ -1,0 +1,99 @@
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+nav div a{
+    font-size: 24px;
+}
+
+.navbar a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #82D7F7;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: grey;
+    color: #82D7F7;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-icon {
+    display: inline-flex; 
+    width: 20px; 
+    height: 15px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-menu.show .navbar a {
+    font-family: Arial, sans-serif; 
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #82D7F7;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar.show a {
+        display: block;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        display: none
+    }
+
+    img {
+        width: 50%; 
+        margin: 20% auto; 
+    }
+    .burger-menu .navbar {
+        width: 60%; 
+        margin: auto; 
+    }
+    
+    .texte {
+        max-width: 70%; 
+        padding: 20px; 
+    }
+
+    .bac a {
+        margin-top: 20px; 
+    }
+
+    .bac a img {
+        width: 100%; 
+    }
+
+    .bac a p {
+        margin: 10px 0 0; 
+        text-align: center; 
+    }
+}
